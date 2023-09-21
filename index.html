@@ -5,24 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Calculadora</h1>
-    <p>Soma</p>
-    <p>
-        <span id="var_a"></span> +
-        <span id="var_b"></span> =
-        <span id="resultado"></span>
-    </p>
-    <script>
-        var soma = 0;
-        var a =5;
-        var b = 10;
-        soma = a + b;
-
-        document.getElementById("resultado").textContent = soma;
-        document.getElementById("var_a").textContent = a;
-        document.getElementById("var_b").textContent = b;
+    <script type="text/javascript">
+        function mudar(objeto,imagem) {
+            lampada1.src=imagem;
+    }
+    
     </script>
+    <a onmouseover="mudar('lampada1', 'lampada1.jpg')"
+     onmouseout="mudar('lampada1', 'lampada2.jpg')">
+    <img src="lampada1.jpg" id="lampada1"></a>
+    
 </body>
 </html>
